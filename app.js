@@ -13,8 +13,12 @@ db.once('open', () => {
   console.log('mongodb connected!')
 })
 
+const exphbs = require('express-handlebars')
+app.engine('hbs', exphbs({ defaultLayouts: 'main', extname: '.hbs' }))
+app.set('view engine', 'hbs')
+
 app.get('/', (req, res) => {
-  res.send('Test')
+  res.render('index')
 })
 
 app.listen(port, () => {
