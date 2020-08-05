@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 const exphbs = require('express-handlebars')
-const port = process.env.PORT || 3000
+const PORT = process.env.PORT || 4000
 
 // 運行 app.js 時候 一併執行該檔案
 require('./config/mongoose')
@@ -19,6 +19,6 @@ app.use(methodOverride('_method'))
 // homepage
 app.use(routes)
 
-app.listen(port, () => {
-  console.log(`App is running on http://localhost:${port}`)
+app.listen(PORT, () => {
+  console.log(`App is running on http://localhost:${PORT}`)
 })
