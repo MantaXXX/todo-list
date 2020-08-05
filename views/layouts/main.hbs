@@ -5,12 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo List</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css' />
 </head>
 
-<body>
+<body class="bg-light">
+  <header>
+    <nav class="navbar navbar-dark bg-primary justify-content-between">
+      <a class="navbar-brand" href="/">Todo List</a>
+      <a class="btn btn-outline-light" href="/todos/new">Create</a>
+    </nav class="navbar">
+  </header>
 
+  <main>
+    <div class="container mt-3">
+      {{{ body }}}
+    </div>
+  </main>
 
-  {{{ body }}}
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/cjs/popper-base.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.js'></script>
 </body>
 
 </html>
