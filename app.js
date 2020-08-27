@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 const exphbs = require('express-handlebars')
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 3000
 
 // 運行 app.js 時候 一併執行該檔案
 require('./config/mongoose')

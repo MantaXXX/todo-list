@@ -6,7 +6,7 @@ const Todo = require('../../models/todo')
 router.get('/new', (req, res) => {
   return res.render('new')
 })
-
+// New
 router.post('/', (req, res) => {
   const name = req.body.name    // 取出表單 name 資料
   return Todo.create({ name })    // 存入資料庫
